@@ -1,0 +1,107 @@
+.bg {
+  /* The image used */
+  background-image: url("../TemplateAvatar/images.jpg");
+
+  /* Full height */
+  height: 46vw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.titHom{
+   color: red;
+   text-align: center;
+   font-size: 16vh;
+   font-size: 18vw;
+}
+
+.pText{
+   color: yellow;
+   text-align: center;
+   font-size: 4vh;
+   font-size: 7vw;
+}
+
+.panel-link{
+    color: gold;
+}
+
+.panel-link:hover{
+    color: gold;
+    text-decoration: none;  
+}
+
+  @keyframes check {0% {height: 0;width: 0;}
+    25% {height: 0;width: 10px;}
+    50% {height: 20px;width: 10px;}
+  }
+  .checkbox{background-color:#fff;display:inline-block;height:28px;margin:0 .25em;width:28px;border-radius:4px;border:1px solid #ccc;float:left}
+  .checkbox span{display:block;height:28px;position:relative;width:28px;padding:0}
+  .checkbox span:after{-moz-transform:scaleX(-1) rotate(135deg);-ms-transform:scaleX(-1) rotate(135deg);-webkit-transform:scaleX(-1) rotate(135deg);transform:scaleX(-1) rotate(135deg);-moz-transform-origin:left top;-ms-transform-origin:left top;-webkit-transform-origin:left top;transform-origin:left top;border-right:4px solid #fff;border-top:4px solid #fff;content:'';display:block;height:20px;left:3px;position:absolute;top:15px;width:10px}
+  .checkbox span:hover:after{border-color:#999}/*animazione perchè resti attiva dopo il click del mouse*/
+  .checkbox input{display:none}
+  .checkbox input:checked + span:after{-webkit-animation:check .1s;-moz-animation:check .1s;-o-animation:check .1s;animation:check .1s;border-color:#555}/*animazione e tempo animazione check casella*/
+.checkbox input:checked + .default:after{border-color:#444}
+.checkbox input:checked + .primary:after{border-color:#2196F3}
+.checkbox input:checked + .success:after{border-color:#8bc34a}
+.checkbox input:checked + .info:after{border-color:#3de0f5}
+.checkbox input:checked + .warning:after{border-color:#FFC107}
+.checkbox input:checked + .danger:after{border-color:#f44336}
+
+.imgSotto { 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+} 
+.imgSopra { 
+    position: absolute; 
+    top: 0%; 
+    right: 0%; 
+    height: 35px;
+    width: 35px;
+}
+
+.notify {
+  position: absolute;
+  right: 27px;
+  top: 15px;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 80px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 80px;
+}
+
+.map{
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+.bgMap {
+  /* The image used */
+  background-image: url("../TemplateAvatar/mappamondo.png");
+
+  /* Full height */
+  height: 24vw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
